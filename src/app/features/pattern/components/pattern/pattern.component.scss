@@ -1,0 +1,35 @@
+.container {
+    display: inline-block;
+    margin-top: 120px;
+    margin-left: 247px;
+}
+.common-border {
+    border: 2px solid black;
+    position: relative;
+}
+.box-model-1 {
+    padding: 25px 40px 30px 40px;
+}
+.box-model-2 {
+    padding: 35px 50px 40px 50px;
+}
+.box-model-3 {
+    padding: 20px 50px 25px 50px;
+}
+.text-rotate {
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    transform-style: preserve-3d;
+    text-align: center;
+    font-size: 26px;
+}
+@keyframes spinner {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(-360deg);
+    }
+}

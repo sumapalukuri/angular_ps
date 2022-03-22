@@ -1,0 +1,31 @@
+  <div style="float: right">
+    <app-home></app-home>
+  </div>
+  <div class="content-wrapper" style="margin-top: 30px;">
+    <div class="content" fxLayout="row wrap" fxLayoutGap="16px grid">
+      <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let num of [1,2,3,4]">
+          <ng-container *ngIf = "num === 1">
+              <app-count-down-timer 
+              [counterValue]="counter" 
+              [updateCounter] = "updateCounter"
+              (pausedCounterValue)="getPausedCounterValue($event)"
+              >
+            </app-count-down-timer>
+          </ng-container>
+          <ng-container *ngIf = "num === 2">
+            <app-input-timer 
+            (timerValue)="getCounterValue($event)" 
+            (timerPaused)="checkTimerPaused($event)"
+            (counterTimeLogger)="getCounterTimerLogged($event)"
+            [pausedCounterValue]="pausedCounterValue"
+            ></app-input-timer>
+        </ng-container>
+        <ng-container *ngIf = "num === 3">
+            <app-timestamp-logger [counterTimeLogged] = "counterTimeLogged"></app-timestamp-logger>
+        </ng-container>
+        <ng-container *ngIf = "num === 4">
+            <app-click-tracker [counterTimeLogged] = "counterTimeLogged"></app-click-tracker>
+        </ng-container>
+      </div>
+    </div>
+  </div>

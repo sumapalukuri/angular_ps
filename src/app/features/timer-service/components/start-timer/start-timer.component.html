@@ -1,0 +1,19 @@
+<mat-card>
+    <div class="input-align">
+        <div style="margin-bottom: 20px;">
+            <label>Enter the countdown</label>
+        </div>
+        <div class="input-icons"> 
+            <mat-icon inline="true" class="icon">timer</mat-icon>
+            <input type="number" name="counter" class="input-field" [(ngModel)]="counterValue">
+        </div>
+    </div>
+    <div class="button-align">
+        <button mat-raised-button color="primary" style="margin: 10px;" (click)="onStart()" [disabled]="counterValue <=0 || !isStart"><mat-icon>stars</mat-icon> &nbsp; Start</button>
+        <button mat-raised-button color="accent" style="margin: 10px;" (click)="onPause()"[disabled]="isStart || isPaused"><mat-icon> pause_presentation</mat-icon> &nbsp; Pause</button>
+        <button mat-raised-button color="primary" style="margin: 10px;" (click)="onResume()" [disabled]="isStart || !isPaused"> <mat-icon>restore</mat-icon> Resume</button>
+    </div>
+    <div class="button-align">
+        <button mat-raised-button color="accent" style="margin: 10px;" (click)="onReset()"[disabled]="counterValue <= 0"><mat-icon>restore</mat-icon> &nbsp; Reset</button>
+    </div>
+</mat-card>

@@ -1,0 +1,18 @@
+<mat-card class="example-card" style="background-color: rgb(240, 240, 240)">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title><span style="text-align: center !important;">{{product.name}}</span></mat-card-title>
+    </mat-card-header>
+    <img *ngIf="product.url" class="image" src="{{product.url}}" alt="mobile">
+    <mat-card-content>
+      <p style="text-align: center; color: darkred;font-size: 18px;">
+        <b>₹{{product.price}}</b>
+      </p>
+      <div style="text-align: center; color: gray">
+        <span>{{product.memoryLabel}} Memory,&nbsp;</span>
+        <span>{{product.ramLabel}} RAM,&nbsp;</span>
+        <span>{{product.cameraLabel}} Camera</span>
+        
+      </div>
+    </mat-card-content>
+  </mat-card>

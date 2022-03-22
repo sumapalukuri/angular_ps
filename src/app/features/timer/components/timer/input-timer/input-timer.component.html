@@ -1,0 +1,18 @@
+<mat-card>
+    <div class="counter-input">
+    <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Enter the Counter Value</mat-label>
+        <input matInput type ="number" placeholder="Number" [(ngModel)]="counterValue">
+      </mat-form-field>
+    </div>
+      <div class="counter-input">
+        <button *ngIf="isStart" mat-raised-button color="primary" (click)="onStartCounter()" [disabled]="counterValue <=0">Start</button>
+        <button *ngIf="changeToPause" mat-raised-button (click)="onPauseCounter()">Pause</button>
+        <button *ngIf="!changeToPause && !isStart" mat-raised-button  color="accent"(click)="onResumeCounter()">Resume</button>
+      </div>
+      <div *ngIf="pausedCounterValue && pausedCounterValue.length > 0" class="counter-input">
+          <ng-container *ngFor="let value of pausedCounterValue">
+            <p><b>Paused at</b> {{value}}</p>
+          </ng-container>
+      </div>
+</mat-card>

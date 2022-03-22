@@ -1,0 +1,17 @@
+
+<mat-card>
+    <div class="wrapper">
+        <div class="timer-align counter-timer">
+            <span><mat-icon>timer_off</mat-icon> <span ><b>Paused</b></span></span>
+            <div>
+                <p style="margin-top: 90px; font-size: 79px"><b>{{timerService.getPausedCount(timerService.counterData)}}</b></p>
+            </div>
+        </div>
+        <div class="timer-align counter-timer">
+            <span><mat-icon>restore</mat-icon> <span><b>Resumed</b></span></span>
+        <div>
+            <p style="margin-top: 90px; font-size: 79px;"><b>{{timerService.getResumedCount(timerService.counterData)}}</b></p>
+        </div>
+        </div>
+    </div>
+</mat-card>

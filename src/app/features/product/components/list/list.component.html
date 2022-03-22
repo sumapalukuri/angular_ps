@@ -1,0 +1,31 @@
+  <div class="container">
+    <div class="row">
+      <span class="view-type">
+        <app-home></app-home>
+       </span> 
+    <button mat-raised-button [color]="!grid ? 'primary': ''" (click) ="grid=false" class="view-type"><mat-icon>list</mat-icon></button>
+    <button mat-raised-button [color]="grid ? 'primary': ''" (click) ="grid=true" class="view-type"><mat-icon>view_module</mat-icon></button>
+
+    <mat-form-field appearance="outline" style="float:left; margin-left:10px">
+      <mat-select placeholder="Filter by Price" (selectionChange)="onSelection($event)">
+          <mat-option *ngFor="let option of options" [value]="option">
+             {{option}}
+          </mat-option>
+      </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="row">
+  <div class="content-wrapper">
+    <div class="content" fxLayout="row wrap" fxLayoutGap="16px grid">
+      <div [fxFlex]="grid ? '25%' : '50%'" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let product of productsList">
+          <app-product-detail [product]="product"></app-product-detail>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div style="color:blue; text-align: center;" *ngIf="!productsList.length">
+    Products are not available
+  </div>
+</div>

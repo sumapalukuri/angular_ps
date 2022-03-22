@@ -1,0 +1,23 @@
+<div style="float: right">
+  <app-home></app-home>
+</div>
+<div>
+  <div class="content-wrapper">
+    <div class="content" fxLayout="row wrap" fxLayoutGap="16px grid">
+      <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let num of [1,2,3,4]">
+          <ng-container *ngIf = "num === 1">
+              <app-start-timer></app-start-timer>
+          </ng-container>
+          <ng-container *ngIf = "num === 2">
+            <app-counter></app-counter>
+        </ng-container>
+        <ng-container *ngIf = "num === 3">
+           <app-time-logger></app-time-logger>
+        </ng-container>
+        <ng-container *ngIf = "num === 4">
+            <app-action-counter></app-action-counter>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>

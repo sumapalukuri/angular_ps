@@ -1,0 +1,45 @@
+
+   
+.content {
+    padding: 70px 16px;
+}
+.content-wrapper {
+    width: 96%;
+    margin: 0px auto;
+}
+.content-footer {
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+}
+.content-main {
+    min-height: 206px;
+}
+.clear-space {
+    clear: both;
+}
+.content-container {
+    background: #f3f3f3;
+}
+.example-header-image {
+    background-size: cover;
+  }
+  .image {
+      height: 150px;
+      margin-left: 90px;
+  }
+  .example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
+
+.view-type {
+    float:right; 
+    margin:10px;
+}
+
+
+
+

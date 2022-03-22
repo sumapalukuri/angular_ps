@@ -1,0 +1,24 @@
+.mat-card {
+    background: #fff;
+    color: rgba(0,0,0,.87);
+    height: 350px;
+    background-color: whitesmoke;
+}
+.paused-count {
+    float: right;
+    width: 50%;
+    font-size: 100px
+}
+.resumed-count {
+    float: left;
+    width: 50%;
+    font-size: 100px
+}
+.align-text {
+    margin: 66px 224px;
+    color: #3f51b5;
+}
+.align-resume {
+    margin: 66px 10px;
+    color: #3f51b5;
+}

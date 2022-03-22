@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "name": "One plus",
+        "url": "../../../../../assets/products/mobile1.jpeg",
+        "price": "22000",
+        "memoryLabel": "16gb",
+        "ramLabel": "4gb",
+        "cameraLabel": "12px"
+    },
+    {
+        "id": 2,
+        "name": "One plus",
+        "url": "../../../../../assets/products/mobile2.jpeg",
+        "price": "22000",
+        "memoryLabel": "16gb",
+        "ramLabel": "4gb",
+        "cameraLabel": "12px"
+    },
+    {
+        "id": 3,
+        "name": "One plus",
+        "url": "../../../../../assets/products/mobile3.webp",
+        "price": "22000",
+        "memoryLabel": "16gb",
+        "ramLabel": "4gb",
+        "cameraLabel": "12px"
+    },
+    {
+        "id": 4,
+        "name": "One plus",
+        "url": "../../../../../assets/products/mobile1.jpeg",
+        "price": "22000",
+        "memoryLabel": "16gb",
+        "ramLabel": "4gb",
+        "cameraLabel": "12px"
+    },
+    {
+        "id": 5,
+        "name": "One plus",
+        "url": "../../../../../assets/products/mobile2.jpeg",
+        "price": "22000",
+        "memoryLabel": "16gb",
+        "ramLabel": "4gb",
+        "cameraLabel": "12px"
+    },
+    {
+        "id": 6,
+        "name": "One plus",
+        "url": "../../../../../assets/products/mobile3.webp",
+        "price": "22000",
+        "memoryLabel": "16gb",
+        "ramLabel": "4gb",
+        "cameraLabel": "12px"
+    },
+    {
+        "id": 7,
+        "name": "One plus",
+        "url": "../../../../../assets/products/mobile1.jpeg",
+        "price": "22000",
+        "memoryLabel": "16gb",
+        "ramLabel": "4gb",
+        "cameraLabel": "12px"
+    },
+    {
+        "id": 8,
+        "name": "One plus8",
+        "url": "../../../../../assets/products/mobile2.jpeg",
+        "price": "2200",
+        "memoryLabel": "16gb",
+        "ramLabel": "4gb",
+        "cameraLabel": "12px"
+    },
+    {
+        "id": 9,
+        "name": "One plus9",
+        "url": "../../../../../assets/products/mobile3.webp",
+        "price": "2000",
+        "memoryLabel": "16gb",
+        "ramLabel": "4gb",
+        "cameraLabel": "12px"
+    }
+]

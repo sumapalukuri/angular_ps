@@ -1,0 +1,8 @@
+<mat-card>
+    <div class="text"><b>Time Stamp Logger</b></div>
+    <ng-container *ngFor="let updateCounter of counterTimeLogged">
+        <p *ngIf = "updateCounter.pausedCount > 0" class="align"><b>Paused at</b> {{updateCounter.timeStamp | date:'dd-MM-yyyy h:mm:ss a'}}</p>
+        <p *ngIf = "updateCounter.resumedCount > 0" class="align"><b>Resumed at</b> {{updateCounter.timeStamp| date:'dd-MM-yyyy h:mm:ss a'}}</p>
+    </ng-container>
+    <div class="text" style="color:darkred; margin-top: 90px;" *ngIf="counterTimeLogged.length <= 0"><b> No Data to dispaly. Add the counter to see the logs</b></div>
+</mat-card>

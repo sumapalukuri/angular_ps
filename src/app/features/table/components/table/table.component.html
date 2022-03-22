@@ -1,0 +1,27 @@
+<div class="container">
+    <table style="width: 80%">
+          <tr>
+              <ng-container *ngFor = "let header of tableHeaders; let i = index">
+                <th class="table-header">{{header | uppercase}} &nbsp; 
+                  <button (click)="sortBy(header)" *ngIf="clickCount === 1">
+                    <mat-icon>arrow_drop_up</mat-icon>
+                  </button>
+                  <button *ngIf="clickCount === 2" (click)="sortBy(header)">
+                    <mat-icon>arrow_drop_down</mat-icon>
+                  </button>
+                  <button *ngIf="clickCount === 3" (click)="sortBy(header)">
+                    <mat-icon>restore</mat-icon>
+                  </button>
+                </th>
+              </ng-container>
+          </tr>
+        <tr *ngFor="let student of marklist">
+          <td>{{ student.name }}</td>
+          <td>{{ student.class }}</td>
+          <td>{{ student.section }}</td>
+          <td>{{ student.sub1 }}</td>
+          <td>{{ student.sub2 }}</td>
+          <td>{{ student.sub3 }}</td>
+        </tr>
+    </table>
+  </div>

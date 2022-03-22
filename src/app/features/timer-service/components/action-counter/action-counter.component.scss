@@ -1,0 +1,22 @@
+.mat-card {
+    color: #ffff;
+    height: 400px;
+    background-color: #000;
+}
+.counter-timer {
+    .mat-icon {
+        font-size: 40px;
+        margin-right: 30px;
+    }
+}
+.timer-align {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 70px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }

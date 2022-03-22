@@ -1,0 +1,22 @@
+.mat-card {
+    color: #ffff;
+    height: 400px;
+    background-color: black;
+    overflow: auto;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    .time-stamp {
+        border: 2px solid lightgray;
+        padding: 10px;
+        font-size: 16px;
+    }
+  }
+.info-message {
+    color:darkred; 
+    margin-top: 90px; 
+    text-align: center; 
+    font-size: 20px;
+}

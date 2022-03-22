@@ -1,0 +1,9 @@
+<mat-card>
+    <div class="wrapper">
+        <ng-container *ngFor="let data of timerSevice.resumedAndPausedData$ | async">
+            <div class="time-stamp" *ngIf="data.isPaused"><b>Paused - </b>{{data.timeStamp | date:'dd-MM-yyyy h:mm:ss a'}}</div>
+            <div class="time-stamp" *ngIf="data.isResumed"><b>Resumed - </b>{{data.timeStamp | date:'dd-MM-yyyy h:mm:ss a'}}</div>
+        </ng-container>
+      </div>
+      <div class="info-message" *ngIf="(timerSevice.counterData).length <= 0"><b> No Data to display. Add the counter to see the logs</b></div>
+</mat-card>

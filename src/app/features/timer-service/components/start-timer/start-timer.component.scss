@@ -1,0 +1,36 @@
+.mat-card {
+    color: #ffff;
+    height: 400px;
+    background-color: #000;
+    margin-top: 20px;
+}
+.input-field {
+    padding: 14px 40px 14px 14px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 2px 2px green;
+    overflow: auto;
+}
+.input-icons .mat-icon {
+    position: absolute;
+    font-size: 20px;
+}
+  
+  
+.icon {
+    padding: 10px;
+    min-width: 40px;
+    color: black;
+}
+ .button-align {
+    text-align: center;
+    margin-top: 41px;
+    .mat-raised-button.mat-button-disabled {
+        background-color: white;
+    }
+ }
+
+ .input-align {
+    color: white !important; 
+    text-align: center;
+ }
