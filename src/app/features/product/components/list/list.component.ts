@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSelectChange } from '@angular/material/select';
+import { ToasterService } from 'src/app/shared/service/toastr.service';
 import { ProductModel } from '../../models/products.model';
 import { ProductsService } from '../../service/products.service';
 
@@ -17,7 +18,8 @@ export class ListComponent implements OnInit {
   options: string[] = ['Low-High', 'High-Low', '1000-10000', '10000-20000', '10000-50000', '10000-100000']
 
   constructor(
-    private _productsService: ProductsService
+    private _productsService: ProductsService,
+    private _toasterService: ToasterService
   ) { }
 
   /**
@@ -29,8 +31,8 @@ export class ListComponent implements OnInit {
         this.productsList = response;
         this.list = this.productsList;
       }
-    }, (error) => {
-      const err = error;
+    }, (error: string) => {
+      this._toasterService.showError(error);
     });
   }
 

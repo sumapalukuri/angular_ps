@@ -11,6 +11,6 @@ export class ProductsService {
   constructor(private _http: HttpClient) { }
 
   getProducts():Observable<any> {
-    return this._http.get(`${environment.backendUrl}/products`);
+    return this._http.get(`${environment.backendUrl}/product`);
   }
 }
